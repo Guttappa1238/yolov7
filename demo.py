@@ -225,7 +225,6 @@ if __name__ == "__main__":
             res = predictor(im)
             if inference_logger:
                 inference_logger.log_inference(image_path, res)
-
             res = vis_res_fast(res, im, class_names, colors, conf_thresh)
         # cv2.imshow('frame', res)
         if args.output:
